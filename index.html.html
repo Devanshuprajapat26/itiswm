@@ -1,0 +1,312 @@
+<!doctype html>
+<html>
+<head>
+<link rel="website icon" type="png"
+href="C:\Users\acer\Pictures\My Project\i7.jpg"> 
+<title> ITI </title>
+<style>
+* {
+box-sizing: border-box;
+margin: 0%;
+padding: 0%;
+fornt-family: Arial, Helvetica, sans-serif;
+}
+.container{
+background: url('C.jpg') no-repeat center center/cover;
+
+height: 100vh;
+width: 100%;
+position: relative;
+z-index: 0;
+} 
+
+.header{
+height: 10vh;
+}
+.navbar{
+display: flex;
+justify-content: space-between;
+align-items: left;
+padding: 1rem 2rem;
+position: fixed;
+width: 100%;
+}
+li{
+text-decoration: none;
+color: yellow;
+background-color: navy;
+
+padding: 5px 10px;
+font-size: 20px;
+border-radius: 10px;
+}
+
+
+.navbar h1{
+font-size: 50px;
+font-style: italic;
+color: green;
+letter-spacing: 3px;}
+
+.navbar li{
+display: inline-block;
+padding: 3px;
+}
+
+.navbar li a{
+padding: 7px 10px;
+text-decoration: none;
+color: white;
+font-weight: 400;
+font-size: 22px;
+
+}
+.navbar li::before{
+content:'';
+width:0;
+background: #ffd225;
+display: block;
+margin: auto;
+transition: 0.5s;
+height: 2px;
+}
+.navbar li:hover::before{
+width: 60%;
+
+}
+.bar{
+display: block;
+width: 25PX;
+height: 3px;
+margin: 5px auto;
+transition: all 0.3s ease-in-out;
+background-color: #ffd225;
+
+}
+
+.hamburger{
+display: none;
+
+}
+
+
+ .ima {display: none;}
+.ima{
+position: relative;
+z-index: -2;
+display: flex;
+margin-left: 10px;
+margin-top: 105px;
+width: 90px;
+
+
+}
+.content{
+display: flex;
+justify-content: flex-start;
+align-items: center;
+flex-direction: column;
+z-index: -2;
+position: relative;
+transform: translate(-0%,-32%);
+}
+.content img{
+margin-bottom: 5px;
+margin-top: -300px;
+margin-left: 950px;
+border: 3px solid green;
+}
+.content p{
+font-size: 30px;
+MARGIN-TOP: 50PX;
+letter-spacing: 10px;
+color: YELLOW;
+font-size: 3em;
+}
+.content h1{
+font-size: 3em;
+color: black;
+MARGIN-TOP: 10PX;
+letter-spacing: 3px;
+}
+
+@media only screen and (max-width:900px){
+.nav-menu{
+display: flex;
+justify-content: center;
+text-align: center;
+position: fixed;
+left: -100%;
+top: 5rem;
+flex-direction: column;
+background-color: #20234c;
+width: 30%;
+height: 80vh;
+border-radius: 10px;
+margin: 2%;
+transition: 0.3s;
+box-shadow: 0 10px 27px rgba(0,0,0,0.05);
+
+}
+
+.nav-menu.active{
+left: 0%;
+
+}
+.navbar li{
+padding: 16% 0;
+
+}
+.navbar li a{
+margin: 4% 0;
+
+}
+.hamburger{
+display: block;
+cursor: pointer;
+}
+.hamburger.active .bar:nth-child(2){
+opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1){
+transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3){
+transform: translateY(-8px) rotate(-45deg);
+}
+}
+
+
+@media only screen and (max-width:700px){
+.ima{
+width:100%;
+
+}
+.content{
+transform: translate(-0%,-15%);}
+
+.content h1{
+font-size: 5em;
+}
+
+}
+
+
+@media only screen and (max-width:450px){
+.content h1{
+font-size: 3em;
+
+}
+
+
+.ima{
+height: 40vh;
+align-items: center;
+
+}
+
+}
+
+</style>
+</head>
+<body>
+
+ 
+
+
+
+
+	<div class="container">
+	 <header class="header">
+	    <nav class="navbar"> 
+		<img src="C:\Users\acer\Pictures\My Project\ii.png" width="25%"  height="130px" style="margin-top: 10px;">
+   <ul class="nav-menu">
+	<li> <a href="GOVTITI.html"> Visit me </a> </li> 
+	
+	<li> <a href="about.html">About </a> </li> 
+
+	<li> <a href="contact.html"> Contact us </a> </li> 
+	<li> <a href="info.html"> Info</a> </li> 
+   </ul>
+<div class="hamburger">
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+</div> 
+</nav>
+</header>
+<div class="ima">
+ <center><a href="https://dgt.gov.in" target="blank"> <img src="C:\Users\acer\Pictures\My Project\download.jpg" width="450%" height="260px"> </a> </center> 
+</div>
+ 
+<div class="content">
+<p><u> Hi GUYS </u>  </p>   
+<h1><u> Most Welcome To Our</u>  </h1> 
+
+
+ <a class="80" href="GOVTITI.html"> <img src="C:\Users\acer\Pictures\My Project\cappe.png">   </a> 
+ 
+ 
+</div>
+
+ </div> 
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+
+
+</script>
+<script>
+const hamburger=document.querySelector('.hamburger')
+const navMenu=document.querySelector('.nav-menu')
+hamburger.addEventListener('click',()=>{
+hamburger.classList.toggle('active')
+navMenu.classList.toggle('active')
+})
+
+
+gsap.from('.header',{
+duration:1,
+y: -50,
+opacity:0, 
+delay:1.3
+});
+
+gsap.from('.ima',{
+duration:2,
+y: -100,
+opacity:0, 
+delay:2
+});
+
+gsap.from('.content img',{
+duration:1,
+y: -50,
+opacity:0, 
+delay:0.5
+});
+
+gsap.from('.content h1',{
+duration:2,
+x: -90,
+opacity:0, 
+delay:2.5
+});
+
+gsap.from('.content p',{
+duration:2,
+x: 90,
+opacity:0, 
+delay:2.5
+});
+
+
+</script>
+
+
+
+</body>
+</html>
+
